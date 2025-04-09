@@ -32,7 +32,7 @@ h5 {
   line-height: auto;
 }
 
-h6 {
+h6,.body-big {
   font-family: "Poppins", sans-serif;
   font-size: 19.2px;
   line-height: auto;
@@ -54,4 +54,21 @@ p {
   font-family: "Poppins", sans-serif;
   font-size: 10px;
   line-height: auto;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: auto;
+  font-weight: bold;
+}
+
+.primary-gradient {
+  background: linear-gradient(to right, #9333EA, #DB2777);
+}
+.primary-gradient-text {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, #9333EA, #DB2777);
 }
