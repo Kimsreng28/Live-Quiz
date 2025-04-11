@@ -41,13 +41,6 @@
                         </router-link>
                         <!-- join quiz button -->
                         <router-link to="/joinquiz">
-                            <!-- <button class="w-[170px] h-[50px] bg-[#ffffff] text-[#222222] rounded-[10px] flex justify-center items-center gap-3 ml-5">
-                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M15.3125 9.6683H4.0625" stroke="#25324B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M10.7754 5.15002L15.3129 9.66802L10.7754 14.1868" stroke="#25324B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                <p class="font-bold">Join Quiz</p>
-                            </button> -->
                             <button
                             class="overflow-hidden relative w-32 p-2 h-12 bg-black text-white border-none rounded-md text-xl font-bold cursor-pointer z-10 group"
                             >
@@ -77,11 +70,11 @@
                     <!-- top layer dice -->
                     <div class="flex gap-2">
                         <!-- n1 -->
-                        <div class="w-[217px] h-[217px] bg-[#EA3D3C] rounded-[10px] flex justify-center items-center">
+                        <div class="eachDice w-[217px] h-[217px] bg-[#EA3D3C] rounded-[10px] flex justify-center items-center">
                             <div class="w-14 h-14 bg-[#ffffff] rounded-full"></div>
                         </div>
                         <!-- n2 -->
-                        <div class="w-[217px] h-[217px] bg-[#3174F1] rounded-[10px] flex justify-center items-center relative">
+                        <div class="eachDice w-[217px] h-[217px] bg-[#3174F1] rounded-[10px] flex justify-center items-center relative">
                             <div class="w-12 h-12 bg-[#ffffff] rounded-full absolute top-5 right-5"></div>
                             <div class="w-12 h-12 bg-[#ffffff] rounded-full absolute bottom-5 left-5"></div>
                         </div>
@@ -89,13 +82,13 @@
                     <!-- bottom layer -->
                     <div class="flex gap-2">
                         <!-- n3 -->
-                        <div class="w-[217px] h-[217px] bg-[#FFC022] rounded-[10px] flex justify-center items-center relative">
+                        <div class="eachDice w-[217px] h-[217px] bg-[#FFC022] rounded-[10px] flex justify-center items-center relative">
                             <div class="w-12 h-12 bg-[#ffffff] rounded-full absolute top-4 right-4"></div>
                             <div class="w-12 h-12 bg-[#ffffff] rounded-full absolute"></div>
                             <div class="w-12 h-12 bg-[#ffffff] rounded-full absolute bottom-4 left-4"></div>
                         </div>
                         <!-- n4 -->
-                        <div class="w-[217px] h-[217px] bg-[#1EB957] rounded-[10px] flex justify-center items-center relative">
+                        <div class="eachDice w-[217px] h-[217px] bg-[#1EB957] rounded-[10px] flex justify-center items-center relative">
                             <div class="w-11 h-11 bg-[#ffffff] rounded-full absolute top-4 right-4"></div>
                             <div class="w-11 h-11 bg-[#ffffff] rounded-full absolute top-4 left-4"></div>
                             <div class="w-11 h-11 bg-[#ffffff] rounded-full absolute bottom-4 right-4"></div>
@@ -108,6 +101,11 @@
     </div>
 </template>
 <style scoped>
+    .eachDice:hover {
+        transform: scale(1.09);
+        transition: transform 0.3s ease;
+
+    }
     .svg-create {
         transition: transform 0.5s ease;
     }
@@ -140,60 +138,10 @@
         .sec1_subcontainer{
             flex-direction: column;
         }
-        .sec1_img{
-            width: 80%;
-            height: auto;
-        }
-        .w-\[50\%\] {
-            width: 100%;
-        }
     }
 
     @media (max-width: 768px) {
-        sec1_container {
-            padding: 1rem;
-        }
-        .sec1_container {
-            width: 100%;
-            padding-left: 1rem;
-            padding-right: 1rem;
-        }
-        .sec1_subcontainer {
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .sec1_subcontainer {
-            width: 100%;
-            height: auto;
-        }
-
-        .sec1_text {
-            font-size: 0.9rem;
-        }
-        .sec1_text h2 {
-            font-size: 1.5rem;
-        }
-
-        .sec1_text p, .sec1_text .subtitle-2 {
-            font-size: 0.85rem;
-        }
-
-        .sec1_text button {
-            font-size: 0.8rem;
-        }
-
-        .sec1_img{
-            width: 100%;
-        }
-        .flex.gap-\[31px\] {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 15px;
-        }
-        button {
-            width: 100%;
-        }
+        
     }
 
 </style>

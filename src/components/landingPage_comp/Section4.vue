@@ -14,9 +14,9 @@
                     ></span>
                     <span class="relative z-10 block px-6 py-3 rounded-2xl primary-gradient">
                         <div class="relative z-10 flex items-center space-x-3">
-                        <p 
+                        <h6 
                             class="transition-all duration-500 group-hover:translate-x-1.5 group-hover:text-white"
-                            >Get Started</p
+                            >Get Started</h6
                         >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"

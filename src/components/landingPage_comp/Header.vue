@@ -1,6 +1,6 @@
 <template>
     <!-- Using Tailwind CSS for styling -->
-    <div class="header w-screen flex justify-between items-center pl-[93px] pr-[93px] pt-[20px] pb-[20px] fixed top-0 left-0 bg-blue-200 shadow-xs z-50">
+    <div class="header w-screen flex justify-between items-center pl-[93px] pr-[93px] pt-[20px] pb-[20px] bg-white fixed top-0 left-0 shadow-xs z-50">
         <router-link to="/">
             <div class="flex justify-center items-center sm:gap-3 md">
                 <div class="w-[160px] h-[65px] rounded-[8px]">
