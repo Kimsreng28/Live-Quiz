@@ -4,7 +4,7 @@
             <img :src="imageSrc" class="w-24 h-24" alt="">
             <h4 class="font-bold text-black">{{title}}</h4>
         </div>
-        <h5 class="text-[#6B7280]">{{description}}</h5>
+        <h5 class="text-[#6B7280] text-center">{{description}}</h5>
     </div>
 </template>
 <script setup>

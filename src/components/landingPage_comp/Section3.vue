@@ -1,10 +1,10 @@
 <template>
     <div ref="sectionRef" class="justify-center items-center w-full sm:pl-20 sm:pr-0 h-full bg-[#FAF5FF] pt-20 pb-20 flex overflow-hidden"> 
-        <div class="flex w-full gap-14 items-center justify-center">
+        <div class="flex lg:flex-row flex-col w-full gap-14 items-center justify-center">
             <!-- left side -->
-            <div class="sec3_left w-[40%] flex flex-col justify-center items-start gap-7">
-                <h1 class="max-w-[550px] text-black font-bold">Everything You Need For Amazing Quizzes</h1>
-                <h5 class="max-w-[550px] text-[#6B7280]">QuizBattle comes packed with all the tools to create engaging interactive experiences.</h5>
+            <div class="sec3_left lg:w-[40%] w-full lg:pl-0 pl-5 lg:pr-0 pr-5 flex flex-col justify-center items-start gap-7">
+                <h1 class="md:max-w-[550px] text-black font-bold text-center md:text-start">Everything You Need For Amazing Quizzes</h1>
+                <h5 class="lg:max-w-[550px] text-[#6B7280] lg:text-start text-center">QuizBattle comes packed with all the tools to create engaging interactive experiences.</h5>
                 <div class="w-full flex gap-10">
                     <div class="flex flex-col gap-7 items-start">
                         <Section3Comp title="Multiple question types" />
@@ -49,15 +49,15 @@
                                     </div>
                                 </div>
                                 <div class="bg-[#FFC022] h-24 rounded-md flex items-center justify-center">
-                                    <div class="h-full w-[90px] relative">
+                                    <div class="h-full w-[95px] relative">
                                         <div class="w-7 h-7 bg-[#ffffff] rounded-full absolute top-1 right-0"></div>
-                                        <div class="w-7 h-7 bg-[#ffffff] rounded-full absolute top-8 left-7"></div>
+                                        <div class="w-7 h-7 bg-[#ffffff] rounded-full absolute top-8 left-6"></div>
                                         <div class="w-7 h-7 bg-[#ffffff] rounded-full absolute bottom-1 left-0"></div>
                                     </div>
                                 </div>
                                 <div class="bg-[#1EB957] h-24 rounded-md flex items-center justify-center relative">
-                                    <div class="h-full w-[70px] relative">
-                                        <div class="w-7 h-7 bg-[#ffffff] rounded-full absolute top-3 right-0"></div>
+                                    <div class="h-full w-[80px] relative">
+                                        <div class="w-7 h-7 bg-[#ffffff] rounded-full  absolute top-3 right-0"></div>
                                         <div class="w-7 h-7 bg-[#ffffff] rounded-full absolute top-3 left-0"></div>
                                         <div class="w-7 h-7 bg-[#ffffff] rounded-full absolute bottom-3 right-0"></div>
                                         <div class="w-7 h-7 bg-[#ffffff] rounded-full absolute bottom-3 left-0"></div>
@@ -73,6 +73,17 @@
 </template>
 
 <style scoped>
+@media (max-width: 768px) {
+    .sec3_right {
+        display: none;
+    }
+}
+@media (max-width: 1024px) {
+    .sec3_right {
+        width: 100%;
+    }
+
+}
 
 </style>
 

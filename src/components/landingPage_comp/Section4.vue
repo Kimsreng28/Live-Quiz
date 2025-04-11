@@ -1,7 +1,7 @@
 <template>
     <div class="w-full primary-gradient flex flex-col justify-center items-center pt-28 pb-28 gap-8">
         <div class="flex flex-col items-center justify-center max-w-[808px] gap-5">
-            <h1 class="font-bold">Ready for Your First Quiz?</h1>
+            <h1 class="font-bold text-center">Ready for Your First Quiz?</h1>
             <h4 class="text-center">Join thousands of educators, trainers, and game enthusiasts who are creating engaging quizzes with Dice.</h4>
         </div>
         <div class="flex items-center justify-center">

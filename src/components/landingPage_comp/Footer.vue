@@ -1,6 +1,6 @@
 <template>
     <div class="bg-[#222831] w-full flex flex-col justify-center items-center pt-16 pb-8 gap-7">
-        <div class="flex gap-40 justify-center items-center w-[80%]">
+        <div class="flex lg:flex-row flex-col lg:gap-40 gap-10 justify-center items-center w-[80%]">
             <!-- logo -->
             <div class="flex flex-col justify-center items-center gap-3 max-w-[380px]">
                 <h1 class="text-white text-bold">DICE</h1>
@@ -17,11 +17,23 @@
                 <!-- Column 1 items -->
                 <div class="row" v-for="item in row">{{ item.name }}</div>
             </div>
+            <!-- info mobile size -->
+            <div class="grid-container-mobile">
+                <div class="header text-bold">About</div>
+                <div class="row" v-for="item in column1">{{ item.name }}</div>
+
+                <div class="header text-bold mt-5">Company</div>
+                <div class="row" v-for="item in column2">{{ item.name }}</div>
+
+                <div class="header text-bold mt-5">Contact Us</div>
+                <div class="row" v-for="item in column3">{{ item.name }}</div>
+                
+            </div>
         </div>
         <!-- additional info -->
-        <div class="flex items-center justify-between w-[80%] ">
+        <div class="flex lg:flex-row flex-col gap-5 lg-gap-0 items-center justify-between w-[80%] ">
             <!-- social-->
-            <div class="flex items-center gap-10">
+            <div class="flex  items-center gap-10">
                 <!-- icons -->
                 <div class="flex gap-3">
                     <img src="/landingPage_img/facebookIcons.png" alt="" class="icons">
@@ -59,6 +71,9 @@
 .row:nth-child(3n+2) { grid-column: 2; }
 .row:nth-child(3n+3) { grid-column: 3; }
 
+.grid-container-mobile{
+    display: none;
+}
 .header {
     /* text-align: start; */
     font-weight: bold;
@@ -75,6 +90,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        display: none;
+    }
+    .grid-container-mobile{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
 }
 </style>
 <script setup>
@@ -93,4 +122,13 @@ const row = [
     { id: 11, name: "FAQ" },
     { id:12, name: "www.superapp-DICE.com" },
 ]
+
+const getColumnItems = (columnIndex) => {
+    return row.filter(item => (item.id - 1) % 3 === columnIndex);
+};
+
+// Get items for each column
+const column1 = getColumnItems(0); // Items with IDs 1, 4, 7, 10
+const column2 = getColumnItems(1); // Items with IDs 2, 5, 8, 11
+const column3 = getColumnItems(2); // Items with IDs 3, 6, 9, 12
 </script>
