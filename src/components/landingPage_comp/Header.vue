@@ -11,8 +11,8 @@
         <nav class="desktop-nav">
             <ul class="flex justify-center items-center gap-[40px]">
                 <li><router-link to="/" class="navList" active-class="active"><h6>Home</h6></router-link></li>
-                <li><router-link to="/aboutus" class="navList" active-class="active"><h6>Create New Quiz</h6></router-link></li>
-                <li><router-link to="/contact" class="navList" active-class="active"><h6>About Us</h6></router-link></li>
+                <li><router-link to="/newquiz" class="navList" active-class="active"><h6>Create New Quiz</h6></router-link></li>
+                <li><router-link to="/aboutus" class="navList" active-class="active"><h6>About Us</h6></router-link></li>
             </ul>
         </nav>
 
