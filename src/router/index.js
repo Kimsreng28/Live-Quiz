@@ -7,14 +7,30 @@ import DashboardPage from "../pages/Dashboard/DashboardPage.vue";
 import HostGame from "../pages/Dashboard/HostGame.vue";
 import MyQuizzes from "../pages/Dashboard/MyQuizzes.vue";
 import Settings from "../pages/Dashboard/Settings.vue";
+import LandingPageLayout from "../pages/LandingPage_layout.vue";
 import LandingPage from "../pages/LandingPage.vue";
+import AboutUsPage from "../pages/AboutUsPage.vue";
+
 
 const routes = [
   // Route For Landing Page
   {
     path: "/",
     name: "Home",
-    component: LandingPage,
+    component: LandingPageLayout,
+    children: [
+      {
+        path: "/aboutus",
+        name: "AboutUs",
+        component: AboutUsPage,
+      },
+      {
+        path: "/",
+        name: "LandingPage",
+        component: LandingPage,
+      }
+        
+    ],
   },
 
   // Route For Dashboard

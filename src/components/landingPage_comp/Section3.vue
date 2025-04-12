@@ -51,7 +51,7 @@
                                 <div class="bg-[#FFC022] h-24 rounded-md flex items-center justify-center">
                                     <div class="h-full w-[95px] relative">
                                         <div class="w-7 h-7 bg-[#ffffff] rounded-full absolute top-1 right-0"></div>
-                                        <div class="w-7 h-7 bg-[#ffffff] rounded-full absolute top-8 left-6"></div>
+                                        <div class="w-7 h-7 bg-[#ffffff] rounded-full absolute top-8 left-8"></div>
                                         <div class="w-7 h-7 bg-[#ffffff] rounded-full absolute bottom-1 left-0"></div>
                                     </div>
                                 </div>
