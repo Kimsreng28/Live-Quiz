@@ -32,7 +32,8 @@ h5 {
   line-height: 1.4;
 }
 
-h6, .body-big {
+h6,
+.body-big {
   font-family: "Poppins", sans-serif;
   font-size: 19.2px;
   line-height: 1.5;
@@ -64,14 +65,18 @@ button {
 }
 
 .primary-gradient {
-  background: linear-gradient(to right, #9333EA, #DB2777);
+  background: linear-gradient(to right, #9333ea, #db2777);
 }
 
 .primary-gradient-text {
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
-  background-image: linear-gradient(to right, #9333EA, #DB2777);
+  background-image: linear-gradient(to right, #9333ea, #db2777);
+}
+
+.bd-gradient {
+  background: linear-gradient(to right, #9333ea, #db2777);
 }
 
 /* Tablet breakpoint */
@@ -79,39 +84,40 @@ button {
   h1 {
     font-size: 45px;
   }
-  
+
   h2 {
     font-size: 32px;
   }
-  
+
   h3 {
     font-size: 28px;
   }
-  
+
   h4 {
     font-size: 24px;
   }
-  
+
   h5 {
     font-size: 20px;
   }
-  
-  h6, .body-big {
+
+  h6,
+  .body-big {
     font-size: 18px;
   }
-  
+
   p {
     font-size: 15px;
   }
-  
+
   .small {
     font-size: 12px;
   }
-  
+
   .smaller {
     font-size: 9px;
   }
-  
+
   button {
     font-size: 15px;
   }
@@ -122,39 +128,40 @@ button {
   h1 {
     font-size: 36px;
   }
-  
+
   h2 {
     font-size: 28px;
   }
-  
+
   h3 {
     font-size: 24px;
   }
-  
+
   h4 {
     font-size: 20px;
   }
-  
+
   h5 {
     font-size: 18px;
   }
-  
-  h6, .body-big {
+
+  h6,
+  .body-big {
     font-size: 16px;
   }
-  
+
   p {
     font-size: 14px;
   }
-  
+
   .small {
     font-size: 11px;
   }
-  
+
   .smaller {
     font-size: 8px;
   }
-  
+
   button {
     font-size: 14px;
   }
