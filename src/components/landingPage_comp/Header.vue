@@ -43,8 +43,8 @@
             <div v-if="isMenuOpen" class="mobile-nav-menu">
                 <ul class="flex flex-col gap-2 py-2">
                     <li><router-link to="/" class="mobile-navList body-big" active-class="active">Home</router-link></li>
-                    <li><router-link to="/aboutus" class="mobile-navList body-big" active-class="active">Create new Quiz</router-link></li>
-                    <li><router-link to="/contact" class="mobile-navList body-big" active-class="active">About Us</router-link></li>
+                    <li><router-link to="/newquiz" class="mobile-navList body-big" active-class="active">Create new Quiz</router-link></li>
+                    <li><router-link to="/aboutus" class="mobile-navList body-big" active-class="active">About Us</router-link></li>
                     <li class="mt-2">
                         <router-link to="login">
                             <button class="login-btn button w-full h-[40px] bg-[#ffffff] text-black rounded-[8px]">
