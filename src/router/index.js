@@ -2,6 +2,10 @@ import { createRouter, createWebHistory } from "vue-router";
 
 import Create_card_quiz from "../components/dashboard_components/Create_card_quiz.vue";
 import Empty_folder from "../components/dashboard_components/Empty_folder.vue";
+import JoinRoom from "../components/JoinRoom.vue";
+import Quiz from "../components/Quiz.vue";
+import QuizPlayer from "../components/QuizPlayer.vue";
+import RoomCreation from "../components/RoomCreation.vue";
 import AboutUsPage from "../pages/AboutUsPage.vue";
 import CreateQuiz from "../pages/Dashboard/CreateQuiz.vue";
 import DashboardLayout from "../pages/Dashboard/DashboardLayout.vue";
@@ -9,10 +13,9 @@ import DashboardPage from "../pages/Dashboard/DashboardPage.vue";
 import HostGame from "../pages/Dashboard/HostGame.vue";
 import MyQuizzes from "../pages/Dashboard/MyQuizzes.vue";
 import Settings from "../pages/Dashboard/Settings.vue";
-import JoinRoom from "../pages/JoinRoom.vue";
 import LandingPage from "../pages/LandingPage.vue";
 import LandingPageLayout from "../pages/LandingPage_layout.vue";
-import Room from "../pages/Room.vue";
+import QuizPage from "../pages/QuizPage.vue";
 
 const routes = [
   // Route For Landing Page
@@ -34,16 +37,31 @@ const routes = [
     ],
   },
 
+  // Test Quiz
   {
-    path: "/join",
+    path: "/quiz",
+    name: "QuizPage",
+    component: QuizPage,
+  },
+  {
+    path: "/create-quiz",
+    name: "createQuiz",
+    component: Quiz,
+  },
+  {
+    path: "/create-room",
+    name: "RoomCreate",
+    component: RoomCreation,
+  },
+  {
+    path: "/join-room",
     name: "JoinRoom",
     component: JoinRoom,
   },
   {
-    path: "/room/:roomCode",
-    name: "Room",
-    component: Room,
-    props: true,
+    path: "/quiz/:roomCode",
+    name: "quizPlayer",
+    component: QuizPlayer,
   },
 
   // Route For Dashboard
